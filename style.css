@@ -165,3 +165,42 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text {
+  max-width: 720px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
