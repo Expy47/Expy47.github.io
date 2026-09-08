@@ -9,155 +9,220 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <div class="scroll-progress" id="scrollProgress"></div>
+  <nav id="siteNav">
+    <a href="#top" class="brand">
+      <span class="brand-dot"></span>
+      Junaid Ul Islam
+    </a>
+    <div class="nav-links">
+      <a href="#about" data-nav>About</a>
+      <a href="#interests" data-nav>Interests</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#teaching" data-nav>Teaching</a>
+      <a href="#publications" data-nav>Publications</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+  </nav>
 
-  <div class="bg-fx" aria-hidden="true"></div>
+  <header id="top">
+    <div class="hero-inner">
+      <p class="eyebrow">— DEPARTMENT OF CIVIL ENGINEERING · BANGLADESH UNIVERSITY OF BUSINESS AND TECHNOLOGY</p>
 
-  <header>
-    <div class="hero-content">
-      <img src="assets/profile.jpg" alt="Junaid Ul Islam" class="profile-photo" />
+      <div class="hero-row">
+        <div class="hero-copy">
+          <h1>Junaid Ul&nbsp;Islam</h1>
+          <p class="hero-role">Lecturer in Civil Engineering &amp; Transportation Engineering Researcher</p>
+          <p class="hero-sub">
+            Interested in traffic flow theory, traffic simulation, public transport, and adaptive traffic
+            signal control.
+          </p>
 
-      <div class="hero-text">
-        <div class="terminal-card">
-          <div class="terminal-bar">
-            <span class="dot dot-r"></span>
-            <span class="dot dot-y"></span>
-            <span class="dot dot-g"></span>
-            <span class="terminal-title">guest@portfolio:~</span>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#research-stats-anchor" data-nav-scroll="#experience">Explore Research →</a>
+            <a class="btn btn-outline" href="assets/CV.pdf" target="_blank" rel="noopener">Download CV</a>
           </div>
-          <div class="terminal-body">
-            <p class="term-line"><span class="prompt">$</span> whoami</p>
-            <h1>Junaid Ul Islam</h1>
-            <p class="term-line"><span class="prompt">$</span> cat role.txt</p>
-            <p class="tagline">
-              Lecturer in Civil Engineering <span class="sep">/</span> Transportation Engineering Researcher
-              <span class="cursor">&nbsp;</span>
-            </p>
-            <p class="term-sub">
-              Interested in traffic flow theory, traffic simulation, public transport, and adaptive traffic signal control.
-            </p>
+
+          <div class="hero-links">
+            <a href="https://github.com/expy47" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=qLuyyTAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/siyamjunaid/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:junaidul2000@gmail.com">Email</a>
           </div>
         </div>
+
+        <img src="assets/profile.jpg" alt="Junaid Ul Islam" class="profile-photo" />
+      </div>
+    </div>
+
+    <div class="stat-strip reveal">
+      <div class="stat">
+        <span class="stat-num">9</span>
+        <span class="stat-label">Research Interests</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Research Threads</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Independent Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">7</span>
+        <span class="stat-label">Courses Taught</span>
       </div>
     </div>
   </header>
 
-  <nav id="siteNav">
-    <a href="#about" data-nav>About</a>
-    <a href="#interests" data-nav>Research Interests</a>
-    <a href="#experience" data-nav>Research Experience</a>
-    <a href="#projects" data-nav>Projects</a>
-    <a href="#teaching" data-nav>Teaching</a>
-    <a href="#publications" data-nav>Publications</a>
-    <a href="#cv" data-nav>CV</a>
-    <a href="#contact" data-nav>Contact</a>
-  </nav>
-
   <main class="container">
 
     <section id="about" class="reveal">
-      <p class="kicker">01 &mdash; Overview</p>
+      <p class="eyebrow">— ABOUT</p>
       <h2>About Me</h2>
-      <p>
-        I am Junaid Ul Islam, a civil engineering graduate from Bangladesh University of Engineering and Technology
-        and currently working as a Lecturer in the Department of Civil Engineering at Bangladesh University of Business
-        and Technology. My academic and research interests are mainly focused on transportation engineering, traffic
-        flow theory, travel behavior modeling, traffic simulation, and adaptive signal control.
-      </p>
-      <p>
-        My long-term goal is to contribute to the development of efficient, safe, and intelligent transportation
-        systems, particularly for rapidly growing and highly congested urban areas.
-      </p>
+
+      <div class="about-row">
+        <div class="about-copy">
+          <p>
+            I am Junaid Ul Islam, a civil engineering graduate from Bangladesh University of Engineering and Technology
+            and currently working as a Lecturer in the Department of Civil Engineering at Bangladesh University of Business
+            and Technology. My academic and research interests are mainly focused on transportation engineering, traffic
+            flow theory, travel behavior modeling, traffic simulation, and adaptive signal control.
+          </p>
+          <p>
+            My long-term goal is to contribute to the development of efficient, safe, and intelligent transportation
+            systems, particularly for rapidly growing and highly congested urban areas.
+          </p>
+        </div>
+        <img src="assets/hero-bg.jpg" alt="Aerial view of a highway interchange with transportation data overlays" class="about-image" />
+      </div>
     </section>
 
     <section id="interests" class="reveal">
-      <p class="kicker">02 &mdash; Focus Areas</p>
+      <p class="eyebrow">— FOCUS AREAS</p>
       <h2>Research Interests</h2>
 
-      <div class="tag-cloud">
-        <span class="tag">Traffic Flow Theory</span>
-        <span class="tag">Traffic Simulation</span>
-        <span class="tag">Adaptive Traffic Signal Control</span>
-        <span class="tag">Reinforcement Learning</span>
-        <span class="tag">Max-Pressure Control</span>
-        <span class="tag">Mode Choice Modeling</span>
-        <span class="tag">Travel Behavior</span>
-        <span class="tag">Public Transportation</span>
-        <span class="tag">Urban Mobility</span>
+      <div class="interest-grid">
+        <div class="interest-card">
+          <span class="interest-icon">🚦</span>
+          <span>Traffic Flow Theory</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🖥️</span>
+          <span>Traffic Simulation</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🚥</span>
+          <span>Adaptive Traffic Signal Control</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🧠</span>
+          <span>Reinforcement Learning</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🌀</span>
+          <span>Max-Pressure Control</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🔀</span>
+          <span>Mode Choice Modeling</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🚶</span>
+          <span>Travel Behavior</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🚌</span>
+          <span>Public Transportation</span>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🏙️</span>
+          <span>Urban Mobility</span>
+        </div>
       </div>
     </section>
 
     <section id="experience" class="reveal">
-      <p class="kicker">03 &mdash; Track Record</p>
+      <p class="eyebrow">— TRACK RECORD</p>
       <h2>Research Experience</h2>
 
-      <div class="item">
-        <h3>Access-Egress Mode Choice Modeling for Dhaka MRT Line 6</h3>
-        <p>
-          My undergraduate thesis focused on access and egress mode choice behavior for Dhaka's first mass rapid transit
-          system. The study used revealed and stated preference data and applied discrete choice models to understand
-          passengers' access and egress travel behavior.
-        </p>
-      </div>
+      <div class="card-list">
+        <div class="entry-card">
+          <p class="entry-tags">TRAVEL BEHAVIOR · MODE CHOICE MODELING</p>
+          <h3>Access-Egress Mode Choice Modeling for Dhaka MRT Line 6</h3>
+          <p>
+            My undergraduate thesis focused on access and egress mode choice behavior for Dhaka’s first mass rapid transit
+            system. The study used revealed and stated preference data and applied discrete choice models to understand
+            passengers’ access and egress travel behavior.
+          </p>
+        </div>
 
-      <div class="item">
-        <h3>RISE Grant Research Project</h3>
-        <p>
-          I worked on a research project supported by the Research and Innovation Centre for Science and Engineering.
-          The project involved travel behavior data collection, model development, and interpretation of access-egress
-          mode choice patterns.
-        </p>
-      </div>
+        <div class="entry-card">
+          <p class="entry-tags">TRAVEL BEHAVIOR · SPONSORED RESEARCH</p>
+          <h3>RISE Grant Research Project</h3>
+          <p>
+            I worked on a research project supported by the Research and Innovation Centre for Science and Engineering.
+            The project involved travel behavior data collection, model development, and interpretation of access-egress
+            mode choice patterns.
+          </p>
+        </div>
 
-      <div class="item">
-        <h3>Traffic Signal Control and Simulation</h3>
-        <p>
-          I am independently studying traffic flow theory, traffic simulation, reinforcement learning, and max-pressure
-          control to explore adaptive traffic signal strategies for congested urban networks.
-        </p>
+        <div class="entry-card">
+          <p class="entry-tags">REINFORCEMENT LEARNING · SIGNAL CONTROL</p>
+          <h3>Traffic Signal Control and Simulation</h3>
+          <p>
+            I am independently studying traffic flow theory, traffic simulation, reinforcement learning, and max-pressure
+            control to explore adaptive traffic signal strategies for congested urban networks.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="reveal">
-      <p class="kicker">04 &mdash; Build Log</p>
+      <p class="eyebrow">— BUILD LOG</p>
       <h2>Projects</h2>
 
-      <div class="item">
-        <h3>Redevelopment of Signboard Pedestrian Overbridge</h3>
-        <p>
-          Led a capstone project on improving pedestrian accessibility and safety at Signboard intersection by proposing
-          an extended pedestrian overbridge design and related traffic management improvements.
-        </p>
-      </div>
+      <div class="card-list">
+        <div class="entry-card">
+          <p class="entry-tags">PEDESTRIAN SAFETY · URBAN MOBILITY</p>
+          <h3>Redevelopment of Signboard Pedestrian Overbridge</h3>
+          <p>
+            Led a capstone project on improving pedestrian accessibility and safety at Signboard intersection by proposing
+            an extended pedestrian overbridge design and related traffic management improvements.
+          </p>
+        </div>
 
-      <div class="item">
-        <h3>Bus Terminal Simulation</h3>
-        <p>
-          Working on a modular discrete-event simulation framework for bus terminal operations using MATLAB SimEvents.
-        </p>
-      </div>
+        <div class="entry-card">
+          <p class="entry-tags">SIMULATION · PUBLIC TRANSPORTATION</p>
+          <h3>Bus Terminal Simulation</h3>
+          <p>
+            Working on a modular discrete-event simulation framework for bus terminal operations using MATLAB SimEvents.
+          </p>
+        </div>
 
-      <div class="item">
-        <h3>Google Maps API-Based Transportation Data Extraction</h3>
-        <p>
-          Used Google Maps API tools to estimate travel time, distance, and route information for transportation
-          modeling and analysis.
-        </p>
+        <div class="entry-card">
+          <p class="entry-tags">DATA · TRAVEL BEHAVIOR</p>
+          <h3>Google Maps API-Based Transportation Data Extraction</h3>
+          <p>
+            Used Google Maps API tools to estimate travel time, distance, and route information for transportation
+            modeling and analysis.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="teaching" class="reveal">
-      <p class="kicker">05 &mdash; Courses</p>
+      <p class="eyebrow">— COURSES</p>
       <h2>Teaching</h2>
 
-      <p>
+      <p class="teaching-intro">
         I am currently teaching civil engineering courses, particularly transportation-related topics such as
         transportation planning, traffic engineering, traffic flow studies, and traffic signal design.
       </p>
@@ -165,60 +230,69 @@
       <div class="two-column">
         <div>
           <h3>Courses / Topics</h3>
-          <p>Transportation Planning</p>
-          <p>Traffic Engineering</p>
-          <p>Traffic Flow Studies</p>
-          <p>Traffic Signal Design</p>
+          <div class="pill-list">
+            <span class="pill">Transportation Planning</span>
+            <span class="pill">Traffic Engineering</span>
+            <span class="pill">Traffic Flow Studies</span>
+            <span class="pill">Traffic Signal Design</span>
+          </div>
         </div>
 
         <div>
           <h3>Other Teaching Areas</h3>
-          <p>Numerical Methods</p>
-          <p>Applied Mathematics</p>
-          <p>Civil Engineering Fundamentals</p>
+          <div class="pill-list">
+            <span class="pill">Numerical Methods</span>
+            <span class="pill">Applied Mathematics</span>
+            <span class="pill">Civil Engineering Fundamentals</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="publications" class="reveal">
-      <p class="kicker">06 &mdash; Output</p>
+      <p class="eyebrow">— OUTPUT</p>
       <h2>Publications and Presentations</h2>
 
-      <div class="item">
-        <h3>Conference Presentation</h3>
-        <p>
-          Presented research on access-egress mode choice behavior for Dhaka MRT Line 6 at the 16th EASTS Conference.
-        </p>
-      </div>
+      <div class="pub-list">
+        <div class="pub-entry">
+          <span class="pub-tag">CONFERENCE</span>
+          <div class="pub-body">
+            <h3>Conference Presentation</h3>
+            <p>
+              Presented research on access-egress mode choice behavior for Dhaka MRT Line 6 at the 16th EASTS Conference.
+            </p>
+          </div>
+        </div>
 
-      <div class="item">
-        <h3>Journal Paper</h3>
-        <p>
-          <a href="https://doi.org/10.11175/easts.16.PP4080" target="_blank" rel="noopener">
-            Islam, J., Jahan, N., Enam, A. (2025). "Analysis of Access Egress mode choice for Dhaka's first mass rapid transit". Journal of the Eastern Asia Society for Transportation Studies (EASTS). https://doi.org/10.11175/easts.16.PP4080
-          </a>
-        </p>
+        <div class="pub-entry">
+          <span class="pub-tag">2025</span>
+          <div class="pub-body">
+            <h3>Journal Paper</h3>
+            <p>
+              Islam, J., Jahan, N., Enam, A. (2025). "Analysis of Access Egress mode choice for Dhaka’s first mass rapid transit". Journal of the Eastern Asia Society for Transportation Studies (EASTS).
+            </p>
+            <a class="pub-link" href="https://doi.org/10.11175/easts.16.PP4080" target="_blank" rel="noopener">View DOI →</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="cv" class="reveal">
-      <p class="kicker">07 &mdash; Download</p>
+      <p class="eyebrow">— DOWNLOAD</p>
       <h2>CV</h2>
 
       <p>
         You can download my updated curriculum vitae using the link below.
       </p>
 
-      <a class="button" href="assets/CV.pdf" target="_blank" rel="noopener">
-        <span>Academic CV</span>
-      </a>
+      <a class="btn btn-solid" href="assets/CV.pdf" target="_blank" rel="noopener">Academic CV</a>
     </section>
 
     <section id="contact" class="reveal">
-      <p class="kicker">08 &mdash; Reach Out</p>
+      <p class="eyebrow">— REACH OUT</p>
       <h2>Contact</h2>
 
-      <div class="contact-grid">
+      <div class="contact-list">
         <a class="contact-row" href="mailto:junaidul2000@gmail.com">
           <span class="contact-label">Email</span>
           <span class="contact-value">junaidul2000@gmail.com</span>
@@ -245,21 +319,18 @@
   </footer>
 
   <script>
-    // Scroll progress bar
-    var progressEl = document.getElementById('scrollProgress');
-    function updateProgress() {
-      var scrollTop = window.scrollY || document.documentElement.scrollTop;
-      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      if (progressEl) progressEl.style.width = pct + '%';
-    }
-    document.addEventListener('scroll', updateProgress, { passive: true });
-    updateProgress();
+    // Smooth-scroll for the hero "Explore Research" CTA
+    document.querySelectorAll('[data-nav-scroll]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.querySelector(el.getAttribute('data-nav-scroll'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
 
-    // Scroll-reveal for sections
     // Content is visible by default in CSS. Only opt sections into the
-    // hidden pre-reveal state once we know JS + IntersectionObserver are
-    // working, so a JS error or slow load never leaves content invisible.
+    // hidden pre-reveal state once we know JS + IntersectionObserver work,
+    // so a JS error or slow load never leaves content invisible.
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var revealEls = document.querySelectorAll('.reveal');
     if (!reduceMotion && 'IntersectionObserver' in window) {
@@ -272,7 +343,7 @@
             io.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
       revealEls.forEach(function (el) { io.observe(el); });
     }
 
