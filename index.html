@@ -5,40 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Junaid Ul Islam | Portfolio</title>
+  <meta name="description" content="Junaid Ul Islam — Lecturer in Civil Engineering, Transportation Engineering Researcher." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header>
-  <div class="hero-content">
-    <img src="assets/profile.png" alt="Junaid Ul Islam" class="profile-photo" />
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-    <div class="hero-text">
-      <h1>Junaid Ul Islam</h1>
-      <p>
-        Lecturer in Civil Engineering | Transportation Engineering Researcher |
-        Interested in traffic flow theory, traffic simulation, public transport, and adaptive traffic signal control.
-      </p>
+  <div class="bg-fx" aria-hidden="true"></div>
+
+  <header>
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Junaid Ul Islam" class="profile-photo" />
+
+      <div class="hero-text">
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="terminal-title">guest@portfolio:~</span>
+          </div>
+          <div class="terminal-body">
+            <p class="term-line"><span class="prompt">$</span> whoami</p>
+            <h1>Junaid Ul Islam</h1>
+            <p class="term-line"><span class="prompt">$</span> cat role.txt</p>
+            <p class="tagline">
+              Lecturer in Civil Engineering <span class="sep">/</span> Transportation Engineering Researcher
+              <span class="cursor">&nbsp;</span>
+            </p>
+            <p class="term-sub">
+              Interested in traffic flow theory, traffic simulation, public transport, and adaptive traffic signal control.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#interests">Research Interests</a>
-    <a href="#experience">Research Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#publications">Publications</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
+  <nav id="siteNav">
+    <a href="#about" data-nav>About</a>
+    <a href="#interests" data-nav>Research Interests</a>
+    <a href="#experience" data-nav>Research Experience</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#teaching" data-nav>Teaching</a>
+    <a href="#publications" data-nav>Publications</a>
+    <a href="#cv" data-nav>CV</a>
+    <a href="#contact" data-nav>Contact</a>
   </nav>
 
   <main class="container">
 
-    <section id="about">
+    <section id="about" class="reveal">
+      <p class="kicker">01 &mdash; Overview</p>
       <h2>About Me</h2>
       <p>
         I am Junaid Ul Islam, a civil engineering graduate from Bangladesh University of Engineering and Technology
@@ -52,29 +77,33 @@
       </p>
     </section>
 
-    <section id="interests">
+    <section id="interests" class="reveal">
+      <p class="kicker">02 &mdash; Focus Areas</p>
       <h2>Research Interests</h2>
 
-      <span class="tag">Traffic Flow Theory</span>
-      <span class="tag">Traffic Simulation</span>
-      <span class="tag">Adaptive Traffic Signal Control</span>
-      <span class="tag">Reinforcement Learning</span>
-      <span class="tag">Max-Pressure Control</span>
-      <span class="tag">Mode Choice Modeling</span>
-      <span class="tag">Travel Behavior</span>
-      <span class="tag">Public Transportation</span>
-      <span class="tag">Urban Mobility</span>
+      <div class="tag-cloud">
+        <span class="tag">Traffic Flow Theory</span>
+        <span class="tag">Traffic Simulation</span>
+        <span class="tag">Adaptive Traffic Signal Control</span>
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">Max-Pressure Control</span>
+        <span class="tag">Mode Choice Modeling</span>
+        <span class="tag">Travel Behavior</span>
+        <span class="tag">Public Transportation</span>
+        <span class="tag">Urban Mobility</span>
+      </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="reveal">
+      <p class="kicker">03 &mdash; Track Record</p>
       <h2>Research Experience</h2>
 
       <div class="item">
         <h3>Access-Egress Mode Choice Modeling for Dhaka MRT Line 6</h3>
         <p>
-          My undergraduate thesis focused on access and egress mode choice behavior for Dhaka’s first mass rapid transit
+          My undergraduate thesis focused on access and egress mode choice behavior for Dhaka's first mass rapid transit
           system. The study used revealed and stated preference data and applied discrete choice models to understand
-          passengers’ access and egress travel behavior.
+          passengers' access and egress travel behavior.
         </p>
       </div>
 
@@ -96,7 +125,8 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="reveal">
+      <p class="kicker">04 &mdash; Build Log</p>
       <h2>Projects</h2>
 
       <div class="item">
@@ -123,7 +153,8 @@
       </div>
     </section>
 
-    <section id="teaching">
+    <section id="teaching" class="reveal">
+      <p class="kicker">05 &mdash; Courses</p>
       <h2>Teaching</h2>
 
       <p>
@@ -149,7 +180,8 @@
       </div>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="reveal">
+      <p class="kicker">06 &mdash; Output</p>
       <h2>Publications and Presentations</h2>
 
       <div class="item">
@@ -162,30 +194,48 @@
       <div class="item">
         <h3>Journal Paper</h3>
         <p>
-          <a href="https://doi.org/10.11175/easts.16.PP4080">
-            Islam, J., Jahan, N., Enam, A. (2025). "Analysis of Access Egress mode choice for Dhaka’s first mass rapid transit". Journal of the Eastern Asia Society for Transportation Studies (EASTS). https://doi.org/10.11175/easts.16.PP4080
+          <a href="https://doi.org/10.11175/easts.16.PP4080" target="_blank" rel="noopener">
+            Islam, J., Jahan, N., Enam, A. (2025). "Analysis of Access Egress mode choice for Dhaka's first mass rapid transit". Journal of the Eastern Asia Society for Transportation Studies (EASTS). https://doi.org/10.11175/easts.16.PP4080
           </a>
         </p>
       </div>
     </section>
 
-    <section id="cv">
+    <section id="cv" class="reveal">
+      <p class="kicker">07 &mdash; Download</p>
       <h2>CV</h2>
-    
+
       <p>
         You can download my updated curriculum vitae using the link below.
       </p>
-    
-      <a class="button" href="assets/CV.pdf" target="_blank">Academic CV</a>
+
+      <a class="button" href="assets/CV.pdf" target="_blank" rel="noopener">
+        <span>Academic CV</span>
+      </a>
     </section>
-    
-    <section id="contact">
+
+    <section id="contact" class="reveal">
+      <p class="kicker">08 &mdash; Reach Out</p>
       <h2>Contact</h2>
-    
-      <p>Email: <a href="junaidul2000@gmail.com">junaidul2000@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/expy47" target="_blank">expy47</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/siyamjunaid/" target="_blank">Junaid Ul Islam</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=qLuyyTAAAAAJ" target="_blank">Google Scholar</a></p>
+
+      <div class="contact-grid">
+        <a class="contact-row" href="mailto:junaidul2000@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">junaidul2000@gmail.com</span>
+        </a>
+        <a class="contact-row" href="https://github.com/expy47" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">expy47</span>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/siyamjunaid/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Junaid Ul Islam</span>
+        </a>
+        <a class="contact-row" href="https://scholar.google.com/citations?hl=en&user=qLuyyTAAAAAJ" target="_blank" rel="noopener">
+          <span class="contact-label">Google Scholar</span>
+          <span class="contact-value">View Profile</span>
+        </a>
+      </div>
     </section>
 
   </main>
@@ -193,6 +243,57 @@
   <footer>
     <p>© 2026 Junaid Ul Islam. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Scroll progress bar
+    var progressEl = document.getElementById('scrollProgress');
+    function updateProgress() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      if (progressEl) progressEl.style.width = pct + '%';
+    }
+    document.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+
+    // Scroll-reveal for sections
+    // Content is visible by default in CSS. Only opt sections into the
+    // hidden pre-reveal state once we know JS + IntersectionObserver are
+    // working, so a JS error or slow load never leaves content invisible.
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var revealEls = document.querySelectorAll('.reveal');
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+      revealEls.forEach(function (el) { el.classList.add('reveal-init'); });
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            entry.target.classList.remove('reveal-init');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(function (el) { io.observe(el); });
+    }
+
+    // Scroll-spy for nav active state
+    var navLinks = document.querySelectorAll('#siteNav a[data-nav]');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+    if ('IntersectionObserver' in window && sections.length && navLinks.length) {
+      var spy = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var id = entry.target.getAttribute('id');
+          var link = document.querySelector('#siteNav a[href="#' + id + '"]');
+          if (!link) return;
+          if (entry.isIntersecting) {
+            navLinks.forEach(function (l) { l.classList.remove('active'); });
+            link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+      sections.forEach(function (s) { spy.observe(s); });
+    }
+  </script>
 
 </body>
 </html>
